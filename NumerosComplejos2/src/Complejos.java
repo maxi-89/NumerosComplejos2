@@ -1,6 +1,5 @@
 import static java.lang.Math.*;
 
-
 public class Complejos {
 	private double real;
 	private double imag;
@@ -20,13 +19,15 @@ public class Complejos {
 		
 		// TODO Auto-generated constructor stub
 	}
-
-
-
-
-
 	
-
+	////metodo suma estatico objetos
+	
+		public static Complejos suma(Complejos suma0, Complejos  suma) {
+			
+			return new Complejos(suma0.getReal()+suma.getReal(), suma0.getImag()+suma.getImag());
+		}
+	
+	
 //to string objetos class complejos
  @Override
 	public String toString() {
@@ -42,6 +43,13 @@ public class Complejos {
 			return true;
 		}else return false;
 	}
+	
+	 //metodo modulo
+		public static  double moduloStatic (Complejos x) {
+			
+			return Math.sqrt(pow(x.getReal(),2)+pow(x.getImag(),2));
+		}
+		
     //metodo modulo
 	public double modulo (Complejos x) {
 		

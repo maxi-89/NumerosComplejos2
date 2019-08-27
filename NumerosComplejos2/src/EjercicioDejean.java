@@ -55,18 +55,31 @@ public class EjercicioDejean {
 			//METODO SUMA 
 			System.out.println("LA SUMA DE DOS NUMEROS COMPLEJOS Z1 Y Z3 ES ...");
 			System.out.println(z1.suma(z3));
+			
 			//metodo resta
 			System.out.println("la resta de dos numeros complejos z2 y z3 es:  ");
 			System.out.println(z2.resta(z3));
+			
 			//metodo multiplicar dos complejos
 			System.out.println("la multiplicacion entre z1 y z3");
 			System.out.println(z1.multiplicar(z3));
+			
 			//metodo multiplicar overload por un escalar
 			System.out.println("multiplicar z1 por un escalar cualquiera en este caso dos: ");
 			System.out.println(z1.Multiplicar(2));
+			
+			//mpdulo de un numero complejo
+			System.out.println("el modulo de z1 es :");
 			System.out.println(z1.modulo(z1));
+			
+			//modulo metodo estatico
+			System.out.println("el modulo estatico de z2 es ");
+			System.out.println(Complejos.moduloStatic(z2));
+			
+			//suma de dos complejos estaticos
+			System.out.println("la suma estatica de z1 y z3 es ");
+			System.out.println(Complejos.suma(z1, z3));
 		}
-
 	}
 
 	
