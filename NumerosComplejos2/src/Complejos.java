@@ -1,6 +1,6 @@
 import static java.lang.Math.*;
 
-public class Complejos {
+public class Complejos implements Comparable<Complejos>{
 	private double real;
 	private double imag;
 	
@@ -52,6 +52,11 @@ public class Complejos {
 		
     //metodo modulo
 	public double modulo (Complejos x) {
+		
+		return Math.sqrt(pow(this.getReal(),2)+pow(this.getImag(),2));
+	}
+	
+public double modulo () {
 		
 		return Math.sqrt(pow(this.getReal(),2)+pow(this.getImag(),2));
 	}
@@ -117,5 +122,20 @@ public class Complejos {
 		
 		return new Complejos(this.getReal()*f,this.getImag()*f);
 	}
+
+	@Override
+	public int compareTo(Complejos arg0) {
+	if(this.modulo()>arg0.modulo()){
+				return 1;
+			}else if(this.modulo()<arg0.modulo()){
+				return -1;
+			}else
+				return 0;
+		}
+		
+	}
 	
-}
+	
+
+	
+
