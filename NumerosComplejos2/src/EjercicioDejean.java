@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 
 public class EjercicioDejean {
 	
@@ -78,8 +80,28 @@ public class EjercicioDejean {
 			
 			//suma de dos complejos estaticos
 			System.out.println("la suma estatica de z1 y z3 es ");
+		
 			System.out.println(Complejos.suma(z1, z3));
+			System.out.println(z1.compareTo(z2));
+			//cargar array
+			
+			
+			Complejos [] arrayListComplejo = {z1,z2,z3};
+			
+			for(i=0;i<arrayListComplejo.length;i++){
+				System.out.println("vector antes de ordenar"+arrayListComplejo[i]);	
+			}
+			
+			//ordenar arraylist
+			Arrays.sort(arrayListComplejo);
+			
+			//mostrar arraylist ordenados
+			for(i=0;i<arrayListComplejo.length;i++){
+			System.out.println("vector ordenado"+arrayListComplejo[i]);
 		}
+			}
+		
+		
 	}
 
 	
